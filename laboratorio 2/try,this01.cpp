@@ -17,28 +17,33 @@ int main(){
        cout<<"Monto a convertir de yenes a dolares: ";
        cin >>y;
        cout << y*yd << "USD\n";
-   if (m=='e')
+   else if (m=='e')
        cout<<"Monto a convertir de euros a dolares: ";
        cin >>e;
        cout<<e*ed << "USD\n";
-   if (m=='l')
+   else if (m=='l')
       cout<<"Monto a convertir de libras a dolares: ";
       cin >>l;
       cout <<l*ld <<"USD\n";
-   cout <<"inicial de la moneda a dolares a convertir (l,e,y)";
-   if (m=='y')
-       cout<<"Monto a convertir de yenes a dolares: ";
-       cin >>y;
-       cout << y/yd << "yenes";
-   if (m=='e')
-       cout<<"Monto a convertir de euros a dolares: ";
-       cin >>e;
-       cout<<e/ed << "EUR";
-   if (m=='l')
-      cout<<"Monto a convertir de libras a dolares: ";
-      cin >>l;
-      cout <<l/ld <<"libras esterlinas\n";
+   else
+      cout<<"moneda no conocida";
 
+   cout <<"convertir de dolares a (l,e,y): ";
+
+   if (m=='y')
+       cout<<"Monto a convertir de dolares a yenes: ";
+       cin >>y;
+       cout << y <<" USD son: " <<y/yd << "yenes\n";
+   else if (m=='e')
+       cout<<"Monto a convertir de dolares a euros: ";
+       cin >>e;
+       cout<<E<< " USD son: " <<e/ed << "EUR\n";
+   else if  (m=='l')
+    cout<<"Monto a convertir de dolares a libras: ";
+      cin >>l;
+      cout <<l<<" USD son:"<<l/ld <<"libras esterlinas\n";
+   else
+      cout<< "moneda no conocida";
 
 }
 
