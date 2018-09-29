@@ -5,7 +5,10 @@ int main(){
     char x;
     x=96;
     int y=x;
-    while (x++,y++,x<123){
+
+    while (x<123){
         cout<< x << " su valor numérico es: "<< y << "\n";
+        x++;
+        y++;
     }
 }
