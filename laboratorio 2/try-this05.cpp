@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
-void square(){
-  int x;
-  cin >>x;
+void square(int x){
   int y=0;
   int p=0;
   while (y<x){
@@ -12,5 +10,7 @@ void square(){
   cout<<"resultado de la potencia al cuadrado:  "<<p<<"\n";
 }
 int main(){
-  square();
+  int x;
+  cin >>x;
+  square(x);
 }
