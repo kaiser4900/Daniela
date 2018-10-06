@@ -5,7 +5,7 @@ int main(){
     double mayor=0, suma=0;
     double in,cm,ft;
     string y;
-    cout<<"Medidas: in,cm, ft, m";
+    cout<<"Medidas: in,cm, ft, m "<<"\n";
     while (cin>>x && x!='#' && cin>>y && y!="#"){
         if(y=="in"){
                 in=x*0.0254;
