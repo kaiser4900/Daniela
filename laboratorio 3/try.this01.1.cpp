@@ -12,6 +12,7 @@ char jug_c(char t_ju){
     char x=c;
     return x;
 
+
 }
 int main(){
     cout<<"x=tijera, y=papel, z=piedra"<<endl;
